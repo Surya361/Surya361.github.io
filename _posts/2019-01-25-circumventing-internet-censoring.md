@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Circumventing internet censoring
 tags:
   - internet-censorship
