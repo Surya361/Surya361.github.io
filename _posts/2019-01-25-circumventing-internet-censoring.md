@@ -2,6 +2,9 @@
 layout: post
 published: false
 title: Circumventing internet censoring
+tags:
+  - internet-censorship
+  - encryption
 ---
 
 In complaince with direction given by [uttharakhand high court](https://www.indiatimes.com/technology/news/uttarakhand-high-court-asks-isps-to-block-porn-sites-for-rise-in-rape-cases-but-will-it-help-354022.html), Indian ISPs started blocking the pornographic sites. In this article I will discect the implementation used to enforce the blockade as well as techniques to circumvent. Finally we will discuss better implementations that address the current pitfalls.
