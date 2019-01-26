@@ -9,7 +9,7 @@ tags:
 
 In complaince with direction given by [uttharakhand high court](https://www.indiatimes.com/technology/news/uttarakhand-high-court-asks-isps-to-block-porn-sites-for-rise-in-rape-cases-but-will-it-help-354022.html), Indian ISPs started blocking the pornographic sites. In this article I will discect the implementation used to enforce the blockade as well as techniques to circumvent. Finally we will discuss better implementations that address the current pitfalls.
 
-A while back one of my friend recommended the [tv series 24](https://en.wikipedia.org/wiki/24_(TV_series)), but i couldnt find it on any of the streaming services, when enquired she reverted back with a link to 123movies.com, which for some reason was blocked in India. I started digging into the implementation of the block.
+A while back one of my friend recommended the [tv series 24](https://en.wikipedia.org/wiki/24_(TV_series)), but i couldnt find it on any of the streaming services, when enquired she reverted back with a link to 123moviestime.com, which for some reason was blocked in India. I started digging into the implementation of the block.
 
 When i tried to resolve the domain name with [dig](https://en.wikipedia.org/wiki/Dig_(command)) it gave the following response
 
@@ -18,7 +18,7 @@ When i tried to resolve the domain name with [dig](https://en.wikipedia.org/wiki
 	;; global options: +cmd
 	123moviestime.com.	10	IN	A	202.83.21.15
 
-A quick whois on the ip revealed that it belonged to the ISP. There was no change in the result even when i forced dig to use googles dns resolver, confirming that the ISP was using [DPI](https://en.wikipedia.org/wiki/Deep_packet_inspection) technique on DNS.
+A quick whois on the ip revealed that it belonged to the ISP. There was no change in the result even when i forced dig to use google's dns resolver, confirming that the ISP was using [DPI](https://en.wikipedia.org/wiki/Deep_packet_inspection) technique on DNS.
 
 To circumvent, i configured my local-dns to the original ip and requested the website using http and https, while the http request failed https worked. This indicated that the ISP is inspecting http request headers and proxying the request when it matches blocked sites, also confirming that the ISP is not inspecting [SNI header](https://en.wikipedia.org/wiki/Server_Name_Indication) to block https traffic.
 
