@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Circumventing internet censoring
+title: Circumventing internet censorship
 tags:
   - internet-censorship
   - encryption
