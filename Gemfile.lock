@@ -113,11 +113,13 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
+    mini_portile2 (2.5.0)
     minima (2.0.0)
     minitest (5.14.4)
     multipart-post (2.1.1)
     net-dns (0.9.0)
     nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     octokit (4.20.0)
       faraday (>= 0.9)
@@ -153,4 +155,4 @@ DEPENDENCIES
   jekyll-paginate
 
 BUNDLED WITH
-   1.13.6
+   2.1.4
