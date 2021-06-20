@@ -14,7 +14,7 @@ title: Publications
 </strong><br />
           Surya Teja Palavalasa, Yuvraj Singh, Adhish Singla, Suresh Purini and Venkatesh Choppella<br />
 	   27th IEEE International Conference on High Performance Computing, Data and Analytics (<strong>HIPC</strong>), 2020<br />
-          <a href="soon">[PDF]</a>
+          <a href="https://ieeexplore.ieee.org/document/9406748/">[PDF]</a>
        </p>
     </div>
 </div>
